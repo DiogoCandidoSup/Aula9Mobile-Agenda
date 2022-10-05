@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTela"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        app:srcCompat="@drawable/lesbiab" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Sistema de Cadastro"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtTitulo1"
+        android:layout_below="@id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Bem vindo ao sistema de cadastro. Este é um pequeno software de cadastro de usuarios. "
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/txtTitulo2"
+        android:layout_below="@id/txtTitulo1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+
+        android:text="Escolha uma das opções abaixo:"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btTelaCadastrar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo2"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Cadastrar usuario"
+
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btTelaListar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btTelaCadastrar"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Listar usuarios"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTela"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        app:srcCompat="@drawable/lesbiab" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Listagem de Usuarios"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/outStatus"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgTela"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="5dp"
+        android:text="Registros: 1 / 10"
+
+        android:textAlignment="textEnd"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outStatus"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Nome: "
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/outNome"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNome"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="[Nome]"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outNome"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Endereço: "
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/outEndereco"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEndereco"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:text="[Endereco]"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outEndereco"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Telefone: "
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/outTelefone"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefone"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:text="[Telefone]"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btAnterior"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outTelefone"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Anterior"
+
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btProximo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outTelefone"
+
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="20dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Proximo"
+
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btCancelar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btAnterior"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Fechar"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>

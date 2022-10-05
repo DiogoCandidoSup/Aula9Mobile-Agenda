@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTela"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+
+        app:srcCompat="@drawable/lesbiab" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Cadastro de Usuario"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtTitulo1"
+        android:layout_below="@id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Preencha os dados abaixo:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo1"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Nome: "
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNome"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNome"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Endereço: "
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edEndereco"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEndereco"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edEndereco"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Telefone: "
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edTelefone"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefone"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTelefone"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Cadastrar"
+
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btCancelar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTelefone"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="210dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/purple_700"
+        android:padding="10dp"
+
+        android:text="Cancelar"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>
